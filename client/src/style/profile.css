@@ -1,0 +1,45 @@
+.full_container{
+    max-width: 850px;
+    margin: 0px auto;
+    background-color: whitesmoke;
+}
+.image_container >img{
+    height: 180px;
+    border-radius: 90px;
+    width: 180px;
+}
+button{
+    padding: 10px;
+    margin-left: 20px;
+}
+.data_container > h2{
+    color: green;
+    max-width: 100%;
+    margin-right:  100px;;
+}
+.data_container .btn {
+    margin-top: 4px;
+}
+.top_container{
+    display: flex;
+    justify-content: space-around;
+    margin: 18px 0px; 
+    padding: 20px;
+    border-bottom: 1px solid rgb(71, 69, 69);
+}
+.post_container{
+    display: flex;
+    justify-content: space-between;
+    width: 108%;
+    color: rgb(56, 228, 56);
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item {
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}

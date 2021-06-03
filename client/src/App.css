@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+*{
+    padding: 0;
+    top: 0;
+    /* background-color: rgb(209, 218, 218); */
+}
+.App{
+    font-family: 'Pattaya', sans-serif;
+}
+.container-fluid{
+    background-color: rgb(231, 241, 241);
+    width: 100%;
+}
+
+#toast-container {
+    color: red;
+}

@@ -1,0 +1,12 @@
+.brand-logo{
+     margin-left: 40px;
+}
+.brand-logo:hover{
+    color: white;
+}
+.right{
+    margin-right: 50px;
+}
+.nav_list:hover{
+    color: white;
+}

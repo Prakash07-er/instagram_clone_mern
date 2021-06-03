@@ -1,0 +1,65 @@
+.home-card{
+    text-align: left;
+}
+.home_profile_pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+.card_heading{
+    color: whitesmoke;
+}
+.card_heading:hover{
+    color: rgb(151, 142, 142);
+}
+.home-card > h2 {
+    color: rgb(184, 173, 173);
+    text-align: left;
+}
+.card_content > h2 {
+    color: rgb(189, 178, 178);
+}
+.card-content > p {
+    color: honeydew;
+}
+.card-content .heart {
+    color: red;
+}
+.card-content .thumb_up {
+    color: rgb(43, 236, 59);
+    padding-left: 30px;
+}
+.card-content .thumb_up:hover {
+    color: rgb(221, 99, 17);
+    padding-left: 30px;
+}
+.card-content .thumb_down {
+    color: rgb(43, 236, 59);
+    padding-left: 30px;
+}
+.card-content .thumb_down:hover {
+    color: rgb(221, 99, 17);
+    padding-left: 30px;
+}
+.comment {
+    padding-top: 10px;
+    color: rgb(194, 189, 189);
+    font-size: 18px;
+}
+.card-content .comment_name{
+    color: rgb(42, 43, 42);
+    font-size: 15px;
+}
+.delete{
+    color: rgb(43, 236, 59);
+    width: 80%;
+    margin-left: 100%;
+}
+.delete:hover{
+    color: rgb(3, 61, 8);
+    width: 100%;
+    margin-left: 100%;
+}
+.card-content .material-icons:hover{
+    cursor: pointer;
+}
