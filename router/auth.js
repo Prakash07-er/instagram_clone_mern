@@ -6,7 +6,17 @@ const bcrypt = require('bcryptjs')
 const jwt = require ('jsonwebtoken')
 const { JWT_SECRET } = require ('../config/keys')
 const requirelogin =  require("../middleware/requirelogin")
+const nodemailer = require('nodemailer')
+const sendgridTranport = require('nodemailer-sendgrid-transport')
 
+
+let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth:{
+        user: "er.u.prakashmahi@gmail.com",
+        pass: "123456"
+    }
+})
 
 router.get('/protected', requirelogin , (req,res) => {
     res.send(" Welcome to Encrypted page ")
@@ -32,6 +42,12 @@ router.post('/signup',(req,res) => {
                })
                user.save()
                .then(user => {
+                   transporter.sendMail({
+                       to: user.email,
+                       from: "no-reply@bloggersden.com",
+                       subject: "Welcome To Bloggers Den",
+                        html: "<h1> Thank you for sining up with us... Be a king in Den!!!!</h1>"
+                   })
                    res.json({message:"Signed Up Successfully"})
                })
                .catch(err => {
